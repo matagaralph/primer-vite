@@ -1,0 +1,17 @@
+@layer theme, base, components, utilities;
+@import 'tailwindcss/theme' layer(theme) prefix(tw);
+@import 'tailwindcss/utilities' layer(utilities);
+@import '@primer/primitives/dist/css/functional/themes/light.css';
+@import '@primer/primitives/dist/css/functional/themes/dark.css';
+@import '@primer/primitives/dist/css/primitives.css';
+
+@variant dark (&:where([data-color-mode="dark"], [data-color-mode="dark"] *));
+
+@theme {
+  --font-display: 'Degular';
+  --font-sans: 'Inter-var', 'Inter';
+
+  /* Height */
+  --height-15: 3.75rem;
+  --width-15: 3.75rem;
+}
